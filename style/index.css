@@ -261,11 +261,12 @@ h3{
     /*------ SubSection:: ""STUFF ABOUT US  'Retina Desgins' ------*/
 .retinaDesgin div{
     display: inline-block;
-    width: 50%;
-    height: 50%;
+
 }
 .retinaDesgin .retenaimage{
 padding-top: 10px;
+width: 40%;
+height: 00%;
 }
 .retinaDesgin .retenaimage img{
     width: 100%;
@@ -273,13 +274,11 @@ padding-top: 10px;
 }
 .retinaDesgin .retinaText {
     margin-top: 40px;
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
 
 }
 .retinaDesgin .retinaText div{
-    width: 100%;
-    height: 100%;
     padding-left: 5px;
 }
 
@@ -291,9 +290,7 @@ padding-top: 10px;
     padding-top: 10px;
 }
 .retinaDesgin .retinaText .orderMeOne{
-    margin: 20px 0px;
-    width: 100%;
-    height: 100%;
+    margin: 50px 0px;
 }
 .retinaDesgin .retinaText a{
     text-decoration: none;
@@ -303,4 +300,12 @@ padding-top: 10px;
     border-radius: 10% ;
 }
 
+/*------------------------- Section:'FOOtER' -------------------*/
+    /*------ SubSection:: "FOOtER Setup" ------*/
+.footer{
+    background-color: #19283f;
+}
+    /*------ SubSection:: ""STUFF ABOUT US (Header) NetWorkImageBox" ------*/
+/*!!!Already Stayled!!!*/
+    /*------ SubSection:: ""STUFF ABOUT US  'Retina Desgins' ------*/
 
