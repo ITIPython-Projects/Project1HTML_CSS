@@ -131,21 +131,20 @@ h3{
 }
 
 /*------------------------- Section: 'good At Some Stuff' -------------------*/
-    /*------ SubSection:: "Good At (Header)" ------*/
-.goodAtImageText{
-    padding-top: 40px;
-}
-.goodAtImageText p{
-    margin-top: 10px;
-
-}
-.goodAtImageText span{
-    padding: 0px 70px;
-    border-bottom-width: 1px;
-    border-bottom-color:rgb(0, 198, 191);;
-    border-bottom-style: solid;
-}
-
+    /*------ SubSection:: "Good At (Header) NetWorkImageBox" ------*/
+    .netWorkImageBox{
+        padding-top: 40px;
+    }
+    .netWorkImageBox p,h2{
+        margin-top: 10px;
+    }
+    .netWorkImageBox span{
+        padding: 0px 70px;
+        border-bottom-width: 1px;
+        border-bottom-color:rgb(0, 198, 191);;
+        border-bottom-style: solid;
+    }
+    
     /*------ SubSection:: "Good At  (Image)" ------*/
 .content .goodAt .innerContainer .goodAtStyff {
     margin-top: 50px;
@@ -193,3 +192,5 @@ h3{
 
 /* From Here We Will Avoid OVERLY-SPECIFIC SELECTORS  */
 /*------------------------- Section:'We MAke This' -------------------*/
+    /*------ SubSection:: "This (Header) NetWorkImageBox" ------*/
+/*!!!Already Styled!!!*/
