@@ -237,7 +237,7 @@ h3{
     height: 200px;
     z-index: 170;
   }
-  
+
     /*------ SubSection:: ""We Make This ' I want More '" ------*/
 .projects .projectsIwantMore{
     margin: 50px 0px;
@@ -250,36 +250,57 @@ h3{
     border-radius: 10% ;
     
 }
-  
-/*
-.projects  .projectsImages .mainView{
-    width: 270px;
-    height: 200px;
+/*------------------------- Section:'STUFF ABOUT US' -------------------*/
+    /*------ SubSection:: "STUFF ABOUT US Setup" ------*/
+.stuffAboutUs{
+    width: 100%;
+    text-align: center;
+}
+    /*------ SubSection:: ""STUFF ABOUT US (Header) NetWorkImageBox" ------*/
+/*!!!Already Stayled!!!*/
+    /*------ SubSection:: ""STUFF ABOUT US  'Retina Desgins' ------*/
+.retinaDesgin div{
     display: inline-block;
-    background-color: rgb(0, 198, 191);
+    width: 50%;
+    height: 50%;
 }
-.mainView > div{
-   
-    vertical-align: middle
+.retinaDesgin .retenaimage{
+padding-top: 10px;
 }
-.mainView{
-    vertical-align: middle;
+.retinaDesgin .retenaimage img{
+    width: 100%;
+    height: 100%;
 }
-#viewtext{
-    
+.retinaDesgin .retinaText {
+    margin-top: 40px;
+    width: 30%;
+    height: 30%;
+
 }
-.projects  .projectsImages div >h4{
-    margin: auto;
+.retinaDesgin .retinaText div{
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
 }
-.Mask {
-    background-color: rgb(0, 198, 191);
-    opacity: 0.8;
-    position: absolute;
-    left: 375px;
-    top: 1631px;
-    width: 270px;
-    height: 200px;
-    z-index: 170;
-  }
-  
-  */
+
+.retinaDesgin .retinaText{
+    margin-right: 19%;
+}
+.retinaDesgin .retinaText p{
+    text-align: left;
+    padding-top: 10px;
+}
+.retinaDesgin .retinaText .orderMeOne{
+    margin: 20px 0px;
+    width: 100%;
+    height: 100%;
+}
+.retinaDesgin .retinaText a{
+    text-decoration: none;
+    background-color: rgb(255, 49, 80);
+    padding: 15px 30px;
+    color: rgb(255, 197, 1);
+    border-radius: 10% ;
+}
+
+
