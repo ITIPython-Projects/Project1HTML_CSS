@@ -5,7 +5,7 @@
 .body{
     min-height: 5000px;
 }
-/*--------------------------NAVEBARE CSS------------------------------*/
+/*___________________________________________||NAVEBARE CSS___________________________________________*/
    /*------NavBare Setup------*/
 .navBar{
     width: 100%;
@@ -79,7 +79,7 @@
     border-radius: 10% ;
 }
   
-/*--------------------------HEADER CSS------------------------------*/
+/*___________________________________________||HEADER CSS___________________________________________*/
 .header{
     width: 100%;
     background-color: #19283f;
@@ -108,16 +108,15 @@
     border-radius: 10% ;
     
 }
-/*--------------------------CONTENT CSS------------------------------*/
-    /*------Content Setup------*/
+/*___________________________________________||CONTENT CSS___________________________________________*/
+/*------Content Setup------*/
 .content{
     width: 100%;
     text-align: center;
 }
-    /*------good At Some Stuff------*/
-.content .goodAt .innerContainer .goodAtImageText{
-    padding-top: 10px;
-}
+
+/*------------------------- Section: 'good At Some Stuff' -------------------*/
+    /*------ SubSection:: "Good At (Header)" ------*/
 .content .goodAt .innerContainper p{
     margin-top: 10px;
 }
@@ -127,6 +126,13 @@
     border-bottom-color:rgb(0, 198, 191);;
     border-bottom-style: solid;
 }
+.content .goodAt .innerContainer .goodAtImageText{
+    padding-top: 40px;
+}
+    /*------ SubSection:: "Good At  (Image)" ------*/
+.content .goodAt .innerContainer .goodAtStyff {
+    margin-top: 50px;
+}
 .content .goodAt .innerContainer .goodAtStyff .staff{
     display: inline-block;
     width: 33%;
@@ -135,16 +141,42 @@
 .content .goodAt .innerContainer .goodAtStyff .staff div{
     display: inline-block;
 }
-.content .goodAt .innerContainer .goodAtStyff .staff .staff1Image{
+#staffImage1{
     background-image: url('../images/stuffNumber1.png');
-    background-size: contain;        
+    width: 79px;        
+    height: 194px;
+}
+#staffImage2{
+    background-image: url('../images/stuffNumber2.png');
+    width: 132px;
+    height: 194px;
+}
+#staffImage3{
+    background-image: url('../images/stuffNumber3.png');
+    width: 131px;
+    height: 198px;
+}
+.content .goodAt .innerContainer .goodAtStyff .staff .staffImage{
+    background-size: contain;        /* When reducing the size of the Div(width,hight) the backGround will resiz e based  on content contain*/
     background-repeat: no-repeat;
     background-position: center ;
-    width: 79px;        
-    height: 194px;          /* When reducing the size of the Div(width,hight) the backGround will resiz e based  on content contain*/
+    margin-bottom: 30px;     
 }
-.content .goodAt .innerContainer .goodAtStyff .staff .staff1Image img{
+.content .goodAt .innerContainer .goodAtStyff .staff .staffImage img{
     width: 61px;
     height: 60px;
     padding:  138px 0px 0px 28px;
 }
+.content .goodAt .innerContainer .goodAtStyff .staff h1{
+    font-size: 20px;
+    color: rgb(255, 197, 1);
+    line-height: 1.35;
+}
+.content .goodAt .innerContainer .goodAtStyff .staff p{
+    font-size: 15px;
+    color: rgb(168, 185, 192);
+    line-height: 2;
+}
+
+/* From Here We Will Avoid OVERLY-SPECIFIC SELECTORS  */
+/*------------------------- Section:'We MAke This' -------------------*/
