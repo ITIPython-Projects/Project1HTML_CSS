@@ -5,3 +5,146 @@
 .body{
     min-height: 5000px;
 }
+/*--------------------------NAVEBARE CSS------------------------------*/
+   /*------NavBare Setup------*/
+.navBar{
+    width: 100%;
+    height: fit-content; 
+    background-color: #19283f;
+    font-family: "Roboto", sans-serif;
+    text-align:  center;
+    position: fixed;
+    /* position: relative;     */
+}
+.innerContainer{
+    width: 70%;
+    padding: 0px;
+    display: inline-block;
+}
+.navBar div{
+    display: inline-block;
+}
+.navBar .naveLogoImge{
+    /* position: absolute;
+    left: 10%;
+    bottom: 15%; */
+    float: left;
+}
+.navBar .innerContainer .navBarbuttons{
+    /* position: absolute;
+    right: 10%;
+    top: 20%; */
+    float: right;
+    
+}
+.navBar .innerContainer .navBarbuttons span{
+    padding: 5px;
+}
+.navBar .innerContainer .navBarbuttons span>a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(168, 185, 192);
+}
+.navBar .innerContainer .navBarbuttons .navbutton{
+    color: rgb(168, 185, 192);
+    line-height: 1.8;
+}
+.navBar .innerContainer .navBarbuttons #separator{
+    color: rgb(0, 198, 191);
+    line-height: 1.8;
+    font-size: 20px;
+}
+   /*------NavBare Decoration (:Active,:Hover)------*/
+.navBar .innerContainer .naveLogoImge a #naveLogo:hover{
+    cursor: pointer;
+}
+.navBar .innerContainer .navBarbuttons #home>a{
+    color: rgb(0, 199, 192);
+}
+.navBar .innerContainer .navBarbuttons span a:Hover{
+    color: rgb(0, 199, 192);
+}
+.navBar .innerContainer .navBarbuttons span #searchIconButton:hover{
+    cursor: help;
+}
+.navBar .innerContainer .navBarbuttons span #searchFild{
+        border-radius: 10% ;
+        border: 2px solid rgb(0, 199, 192);
+        display: none;        
+}
+.navBar .innerContainer .navBarbuttons #loginButton >a{
+    background-color: rgb(255, 49, 80);
+    color: rgb(255, 197, 1);
+    padding: 5px 10px;
+    border-radius: 10% ;
+}
+  
+/*--------------------------HEADER CSS------------------------------*/
+.header{
+    width: 100%;
+    background-color: #19283f;
+    text-align: center;
+    height: 300px;
+}
+.header .innerContainer{
+     margin: 7%; 
+}
+.header .innerContainer .headertext{
+    color: rgb(240, 248, 251);
+    
+}
+.header .innerContainer .headertext h1{
+    font-weight: normal;
+    font-size: 51px;
+}
+.header .innerContainer .headerGetStart {
+    margin-top: 25px; 
+}
+.header .innerContainer .headerGetStart a{
+    text-decoration: none;
+    background-color: rgb(255, 49, 80);
+    color: rgb(255, 197, 1);
+    padding: 10px 30px;
+    border-radius: 10% ;
+    
+}
+/*--------------------------CONTENT CSS------------------------------*/
+    /*------Content Setup------*/
+.content{
+    width: 100%;
+    text-align: center;
+}
+    /*------good At Some Stuff------*/
+.content .goodAt .innerContainer .goodAtImageText{
+    padding-top: 10px;
+}
+.content .goodAt .innerContainper p{
+    margin-top: 10px;
+}
+.content .goodAt .innerContainer span{
+    padding: 0px 70px;
+    border-bottom-width: 1px;
+    border-bottom-color:rgb(0, 198, 191);;
+    border-bottom-style: solid;
+}
+.content .goodAt .innerContainer .goodAtStyff .staff{
+    display: inline-block;
+    width: 33%;
+
+}
+.content .goodAt .innerContainer .goodAtStyff .staff div{
+    display: inline-block;
+}
+.content .goodAt .innerContainer .goodAtStyff .staff .staff1Image{
+    background-image: url('../images/stuffNumber1.png');
+    background-size: contain;        
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 79px;        
+    height: 194px;          /* When reducing the size of the Div(width,hight) the backGround will resiz e based  on content contain*/
+}
+.content .goodAt .innerContainer .goodAtStyff .staff .staff1Image img{
+    width: 61px;
+    height: 60px;
+    padding:  138px 0px 0px 28px;
+}
