@@ -5,6 +5,25 @@
 .body{
     min-height: 5000px;
 }
+p{                 
+    font-size: 15px;
+    color: rgb(168, 185, 192);
+    line-height: 1.8;
+}
+h1{
+    font-weight: normal;
+    font-size: 51px;
+}
+h2{
+    font-size: 35px;
+    color: rgb(26, 41, 64);
+    line-height: 0.771;
+}
+h3{
+    font-size: 20px;
+    color: rgb(255, 197, 1);
+    line-height: 1.35;
+}
 /*___________________________________________||NAVEBARE CSS___________________________________________*/
    /*------NavBare Setup------*/
 .navBar{
@@ -93,10 +112,6 @@
     color: rgb(240, 248, 251);
     
 }
-.header .innerContainer .headertext h1{
-    font-weight: normal;
-    font-size: 51px;
-}
 .header .innerContainer .headerGetStart {
     margin-top: 25px; 
 }
@@ -117,18 +132,20 @@
 
 /*------------------------- Section: 'good At Some Stuff' -------------------*/
     /*------ SubSection:: "Good At (Header)" ------*/
-.content .goodAt .innerContainper p{
-    margin-top: 10px;
+.goodAtImageText{
+    padding-top: 40px;
 }
-.content .goodAt .innerContainer span{
+.goodAtImageText p{
+    margin-top: 10px;
+
+}
+.goodAtImageText span{
     padding: 0px 70px;
     border-bottom-width: 1px;
     border-bottom-color:rgb(0, 198, 191);;
     border-bottom-style: solid;
 }
-.content .goodAt .innerContainer .goodAtImageText{
-    padding-top: 40px;
-}
+
     /*------ SubSection:: "Good At  (Image)" ------*/
 .content .goodAt .innerContainer .goodAtStyff {
     margin-top: 50px;
@@ -167,11 +184,7 @@
     height: 60px;
     padding:  138px 0px 0px 28px;
 }
-.content .goodAt .innerContainer .goodAtStyff .staff h1{
-    font-size: 20px;
-    color: rgb(255, 197, 1);
-    line-height: 1.35;
-}
+
 .content .goodAt .innerContainer .goodAtStyff .staff p{
     font-size: 15px;
     color: rgb(168, 185, 192);
