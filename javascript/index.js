@@ -17,17 +17,66 @@ var arrCategory = {all:0,
                   code:2,
                   photography:3,
                   apps:4}
-var courrentSlectedProjects_Category = 0  //for All Category
+var old_ChossenCatigory = 0  //for All Category
 var arrButtons = document.getElementsByTagName('button')
 Array.from(arrButtons).forEach(function(element) {
     element.addEventListener('click', function(){
     document.getElementsByClassName('ProjectButtonActiv')[0].classList.toggle("ProjectButtonActiv");
     this.classList.add('ProjectButtonActiv')
-   // cheangeCategoryImages(this)
+    cheangeCategoryImages(this)
     });
   });
-/*function cheangeCategoryImages(this){
-    if(arrCategory[this.id] == courrentSlectedProjects_Category) //Avoid MultiClick
+function cheangeCategoryImages(_this){
+    // inhance the Algorithm by define the variable of multi use value
+    var new_ChossenCatigory = arrCategory[_this.id];
+    //Avoid MultiClick
+    if(new_ChossenCatigory == old_ChossenCatigory) 
      return 0
+    //Set Previous Slected Projects_Category To hte Chossen Button
+    old_ChossenCatigory = new_ChossenCatigory
+    //Change Main Image to Image based on the  Category
+    //NOTE: this Section Will be replace with Iframe in the  Next Version
+    switch (new_ChossenCatigory) {
+        case 0:
+            document.getElementById('mainImageCategoty').src='images/mainImageAll.png';
+            //It's just a Demo SO it change Randomly 
+            changeAll();
+            break;
+        case 1:
+            document.getElementById('mainImageCategoty').src='images/mainImageDesign.png'
+            //It's just a Demo SO it change oly one Image
+            changeAll('images/designProject.png');
+            break;
+        case 2:
+            document.getElementById('mainImageCategoty').src='images/mainImageCode.png'
+            //It's just a Demo SO it change oly one Image
+            changeAll('images/codeProject.png');
+            break;
+        case 3:
+            document.getElementById('mainImageCategoty').src='images/mainImagePhotography.png'
+            //It's just a Demo SO it change oly one Image
+            changeAll('images/photographyProject.png');
+            break;
+        case 4:
+            document.getElementById('mainImageCategoty').src='images/mainImageApp.png'
+            //It's just a Demo SO it change oly one Image
+            changeAll('images/appProject.png');
+            break;
+    
+    }
 }
-*/
+function changeAll(path=''){
+    var arrImgaes = document.getElementsByClassName('projects')
+    if(path){
+        Array.from(arrImgaes).forEach(function(element) {
+            element.src=path
+        });
+        return 0;
+    }
+    //It's just a Demo SO it change oly one Image for Category
+    var arrOfImages = ['appProject.png','photographyProject.png','codeProject.png','designProject.png']
+    Array.from(arrImgaes).forEach(function(element) {
+        element.src='images/'+arrOfImages[Math.floor(Math.random() * 4)]
+    });
+
+}
