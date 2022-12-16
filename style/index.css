@@ -132,18 +132,18 @@ h3{
 
 /*------------------------- Section: 'good At Some Stuff' -------------------*/
     /*------ SubSection:: "Good At (Header) NetWorkImageBox" ------*/
-    .netWorkImageBox{
-        padding-top: 40px;
-    }
-    .netWorkImageBox p,h2{
-        margin-top: 10px;
-    }
-    .netWorkImageBox span{
-        padding: 0px 70px;
-        border-bottom-width: 1px;
-        border-bottom-color:rgb(0, 198, 191);;
-        border-bottom-style: solid;
-    }
+.netWorkImageBox{
+    padding-top: 40px;
+}
+.netWorkImageBox p,h2{
+    margin-top: 10px;
+}
+.netWorkImageBox span{
+    padding: 0px 70px;
+    border-bottom-width: 1px;
+    border-bottom-color:rgb(0, 198, 191);
+    border-bottom-style: solid;
+}
     
     /*------ SubSection:: "Good At  (Image)" ------*/
 .content .goodAt .innerContainer .goodAtStyff {
@@ -152,7 +152,6 @@ h3{
 .content .goodAt .innerContainer .goodAtStyff .staff{
     display: inline-block;
     width: 33%;
-
 }
 .content .goodAt .innerContainer .goodAtStyff .staff div{
     display: inline-block;
@@ -184,13 +183,35 @@ h3{
     padding:  138px 0px 0px 28px;
 }
 
-.content .goodAt .innerContainer .goodAtStyff .staff p{
-    font-size: 15px;
-    color: rgb(168, 185, 192);
-    line-height: 2;
-}
+
 
 /* From Here We Will Avoid OVERLY-SPECIFIC SELECTORS  */
 /*------------------------- Section:'We MAke This' -------------------*/
-    /*------ SubSection:: "This (Header) NetWorkImageBox" ------*/
-/*!!!Already Styled!!!*/
+    /*------ SubSection:: "We Make This Setup" ------*/
+.weMakeThis{
+    width: 100%;
+    background-color:#eff7fa ;
+}
+
+    /*------ SubSection:: ""We Make This (Header) NetWorkImageBox" ------*/
+/*!!!Already Stayled!!!*/
+    /*------ SubSection:: ""We Make This (Header) NetWorkImageBox" ------*/
+.ShowButtons button{
+    background: none;
+    border: none;
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(168, 185, 192);
+    line-height: 1.8;
+}
+.ShowButtons button:hover{
+    cursor: pointer;
+}
+  
+.ShowButtons .ProjectButtonActiv{
+    background-color: rgb(255, 49, 80);
+    color: rgb(255, 197, 1) ;
+    padding: 5px 20px;
+    border-radius: 11% ;
+}
+  
