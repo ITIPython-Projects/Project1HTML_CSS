@@ -12,6 +12,7 @@
 <script>
     var url = window.location;
     var access_token = new URLSearchParams(url.search).get('first_name');
+    console.log(access_token)
     document.write("<h1>" +'welcome : '+"<span style='font-weight: bold;'>"+access_token +"</span>"+"</h1>"+"</h1>")
     
 </script>

@@ -14,22 +14,25 @@
 <body>
 <!------------------------------------------------------------------------------- Container------------------------------------------------------------------------------>
    
-<form method="get" action="ًwelcome.html">
+<form action="welcome.html" method="get">
         <input type="hidden" name="UID" value="1">
         <label for="first_name">First name: </label>
         <span id="required">
-            <input id="first_name" type="text" name="first_name "  tabindex="1" required>
+            <input id="first_name" type="text" name="first_name"  tabindex="1" required>
         </span><br>
         <label for="last_name">last name: </label> 
         <span id="required"  >
-            <input id="last_name" type="text" name="last_name "  tabindex="2" required>
+            <input id="last_name" type="text" name="last_name"  tabindex="2" required>
         </span id="required"><br>
         <label for="email">Email: </label> 
         <span id="required"  class="test" >
             <input id="email" class="validation" type="email" name="email"  tabindex="3" required>
             <span id="notvalid"></span>
         </span><br>
-        <label for="password">Password: </label> <input id="password" type="password"  tabindex="4" name="password" ><br>
+        <span id="required"  >
+            <label for="password">Password: </label> <input id="password" type="password"  required tabindex="4" name="password" >
+        </span>
+        <br>
         <label>repeat Password: </label> <input type="password" name="repassword" ><br>
         <label>Birth Date: </label> <input type="date" name="date" ><br>
         <label>Upload File: </label> <input type="file" name="file" ><br>
