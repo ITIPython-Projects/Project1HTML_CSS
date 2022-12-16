@@ -195,7 +195,7 @@ h3{
 
     /*------ SubSection:: ""We Make This (Header) NetWorkImageBox" ------*/
 /*!!!Already Stayled!!!*/
-    /*------ SubSection:: ""We Make This (Header) NetWorkImageBox" ------*/
+    /*------ SubSection:: ""We Make This  'Buttons' ------*/
 .ShowButtons button{
     background: none;
     border: none;
@@ -214,4 +214,59 @@ h3{
     padding: 5px 20px;
     border-radius: 11% ;
 }
+    /*------ SubSection:: ""We Make This 'Projects Images'" ------*/
+
+.projects  .projectsImages{
+    margin-top: 50px;
+    width: 100%;
+    text-align:center;
+}
+.projectsImages img{
+    width: 20%;
+    height: 25%;
+    padding: 0px 15px 15px;
+
+}
+.Mask {
+    background-color: rgb(25, 40, 63);
+    opacity: 0.8;
+    position: absolute;
+    left: 375px;
+    top: 1631px;
+    width: 270px;
+    height: 200px;
+    z-index: 170;
+  }
   
+/*
+.projects  .projectsImages .mainView{
+    width: 270px;
+    height: 200px;
+    display: inline-block;
+    background-color: rgb(0, 198, 191);
+}
+.mainView > div{
+   
+    vertical-align: middle
+}
+.mainView{
+    vertical-align: middle;
+}
+#viewtext{
+    
+}
+.projects  .projectsImages div >h4{
+    margin: auto;
+}
+.Mask {
+    background-color: rgb(0, 198, 191);
+    opacity: 0.8;
+    position: absolute;
+    left: 375px;
+    top: 1631px;
+    width: 270px;
+    height: 200px;
+    z-index: 170;
+  }
+  
+  */

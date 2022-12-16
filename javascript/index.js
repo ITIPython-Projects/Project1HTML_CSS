@@ -12,14 +12,22 @@ function displayInput(){
     hasPressed = 1
 }
 //------------------------- CONTENT Section:'We MAke This' Display Projects Button -------------------------
+var arrCategory = {all:0,
+                  design:1,
+                  code:2,
+                  photography:3,
+                  apps:4}
+var courrentSlectedProjects_Category = 0  //for All Category
 var arrButtons = document.getElementsByTagName('button')
 Array.from(arrButtons).forEach(function(element) {
     element.addEventListener('click', function(){
     document.getElementsByClassName('ProjectButtonActiv')[0].classList.toggle("ProjectButtonActiv");
     this.classList.add('ProjectButtonActiv')
+   // cheangeCategoryImages(this)
     });
   });
-// function removeActiveClass(_this){
-//     document.getElementsByClassName('ProjectButtonActiv')[0].classList.toggle("ProjectButtonActiv");
-//     _this.classList.add('ProjectButtonActiv')
-// }
+/*function cheangeCategoryImages(this){
+    if(arrCategory[this.id] == courrentSlectedProjects_Category) //Avoid MultiClick
+     return 0
+}
+*/
