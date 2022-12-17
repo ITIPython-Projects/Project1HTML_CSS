@@ -37,7 +37,7 @@ body {
 }
 .formBox .left .leftBox h1 {
   /*vmax depend on the take theMaxumume of (Width ir hight) WINDOW*/
-  font-size: 10vmax;
+  font-size: 7vmax;
   line-height: 1;
   font-weight: 900;
   margin-top: 40px;
@@ -75,6 +75,13 @@ body {
   font-size: 14px;
   color: #B0B3B9;
 }
+.formBox .right p>span {
+  color: #110a71;
+  text-decoration:underline;
+}
+.formBox .right p>span:hover {
+  cursor: pointer;
+}
 
 .formBox .right input {
   width: 100%;
@@ -101,7 +108,7 @@ label span.text-checkbox {
   cursor: pointer;
   transition: all 0.2s linear;
 }
-.formBox .right button {
+.formBox .right input[type="submit"] {
   float: right;
   color: #fff;
   font-size: 16px;
