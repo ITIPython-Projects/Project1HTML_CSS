@@ -1,5 +1,11 @@
 # Project1HTML_CSS
 Using HTML,CSS and js To Implement the UI/UX development of a home page for any modern design website.
+>*Layout:*
+-  Website is divided into NaveBare, headers,Content 
+    - Content divided into Sections GOOD AT, WE Make THIS, STUFF ABOUT US  
+- A Container `div` with the same style  for the whole WebSite.
+<img src="Web Site layout/Frame.png" width="500" title="Website layout design" alt="website is Designed in a Container Frame"/>
+
 
 >*Notes:*
 - `P Tags`  Tages has the same Sayle
