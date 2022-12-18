@@ -7,10 +7,13 @@ function replaceToRegistration(){
     email.setAttribute('required','');
     repassword.style.display='inline';
     repassword.setAttribute('required','')
+    //Form Headers
+    document.getElementById('formHeader').innerText='Registration'
+    document.getElementById('acount').innerText=''
     //remmember me
     document.getElementsByClassName('remmemberMe')[0].style.display='none'
-
     /** Set submit Button Value*/
     document.getElementById('submit').value='Submit'
     document.getElementsByTagName('form')[0].action='redirection.html'
+    
 }
