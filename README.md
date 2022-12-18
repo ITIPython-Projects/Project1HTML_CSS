@@ -14,7 +14,7 @@ Using HTML,CSS and js To Implement the UI/UX development of a home page for any 
 - `H3 Tags` has the same Sayle Which Used in *sub sections* of ***Content** Sections *
 * NetWorkImageBox (Div) is  Used in Every start of Sections with the same stayle
 
-<*Links*
+>*Links*
 - [GitHub Pages](https://github.com/ITIPython-Projects/Project1HTML_CSS).
     + [GitHub Repo](https://github.com/ITIPython-Projects/Project1HTML_CSS.git).
 - [netlify](https://graphiciticreative.netlify.app/).
