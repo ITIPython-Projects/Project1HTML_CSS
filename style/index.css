@@ -259,53 +259,34 @@ h3{
     /*------ SubSection:: ""STUFF ABOUT US (Header) NetWorkImageBox" ------*/
 /*!!!Already Stayled!!!*/
     /*------ SubSection:: ""STUFF ABOUT US  'Retina Desgins' ------*/
-.retinaDesgin div{
-    display: inline-block;
+         /*---Text---*/
+.stuffAboutUs .retinaDesgin{
+    margin-top: 15px;
+}
+.stuffAboutUs .retinaDesgin .retinaText{
+    float: left;
+    width: 30vmax;
+    padding: 20px;
 
 }
-.retinaDesgin .retenaimage{
-padding-top: 10px;
-width: 40%;
-height: 00%;
-}
-.retinaDesgin .retenaimage img{
-    width: 100%;
-    height: 100%;
-}
-.retinaDesgin .retinaText {
-    margin-top: 40px;
-    width: 40%;
-    height: 40%;
-
-}
-.retinaDesgin .retinaText div{
-    padding-left: 5px;
-}
-
-.retinaDesgin .retinaText{
-    margin-right: 19%;
-}
-.retinaDesgin .retinaText p{
+.stuffAboutUs .retinaDesgin .retinaText .paragraph{
     text-align: left;
-    padding-top: 10px;
 }
-.retinaDesgin .retinaText .orderMeOne{
-    margin: 50px 0px;
+.stuffAboutUs .retinaDesgin .retinaText .paragraph p{
+    padding-top: 5px;
 }
-.retinaDesgin .retinaText a{
+.stuffAboutUs .retinaDesgin .retinaText .orderMeOne {
+    margin: 20px 0px;
+}
+.stuffAboutUs .retinaDesgin .retinaText .orderMeOne a{
     text-decoration: none;
     background-color: rgb(255, 49, 80);
     padding: 15px 30px;
     color: rgb(255, 197, 1);
     border-radius: 10% ;
 }
+         /*---Image---*/
+.stuffAboutUs .retinaDesgin .retenaimage>img{
 
-/*------------------------- Section:'FOOtER' -------------------*/
-    /*------ SubSection:: "FOOtER Setup" ------*/
-.footer{
-    background-color: #19283f;
+    max-width: 50%;
 }
-    /*------ SubSection:: ""STUFF ABOUT US (Header) NetWorkImageBox" ------*/
-/*!!!Already Stayled!!!*/
-    /*------ SubSection:: ""STUFF ABOUT US  'Retina Desgins' ------*/
-
