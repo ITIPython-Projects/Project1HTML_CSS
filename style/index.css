@@ -4,6 +4,7 @@
   }
 .body{
     min-height: 5000px;
+    font-family: "Roboto", sans-serif;
 }
 p{                 
     font-size: 15px;
@@ -228,7 +229,7 @@ h3{
 
 }
 .Mask {
-    background-color: rgb(25, 40, 63);
+    background-color: #19283f;
     opacity: 0.8;
     position: absolute;
     left: 375px;
@@ -290,3 +291,131 @@ h3{
 
     max-width: 50%;
 }
+
+/*------------------------- Section:'Meet The Team' -------------------*/
+    /*------ SubSection:: "'Meet The Team " ------*/
+.meetTheTeam{
+    width: 100%;
+    background-color: rgb(239, 247, 250);
+    padding-bottom: 40px;
+}
+    /*------ SubSection:: "'Meet The Team (Header) NetWorkImageBox" ------*/
+ /*!!!Already Stayled!!!*/
+    /*------ SubSection:: "'Meet The Team'  'teamImages' ------*/
+             /*---teamImages---*/
+.teamImages {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.teamImages .member  {
+    background-color: white;
+    width:300px;
+    border-radius: 10px;
+    
+}
+@media (max-width: 900px){
+    .teamImages .member  {
+        text-align: center;
+        background-color: white;
+        width:100%;
+        margin-top: 40px;
+    }
+}
+.teamImages .member img{
+    height: 200px; 
+}
+.teamImages .member .name{
+    padding: 15px 0px;
+    background-color: #33cccc;
+}
+.teamImages .member .brief{
+    padding: 15px;
+}
+/*------------------------- Section:'Sponsores' -------------------*/
+.sponsores{
+    margin-top: 30px;
+}
+.sponsores .icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*------------------------- Section:'subscription' -------------------*/
+.subscription{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffcc00;
+}
+@media (min-width: 800px){
+    .subscription * {
+        margin-left: 30px;
+    }
+}
+.subscription p{
+    display: inline-block;
+    color: #19283f;
+    font-size:larger;
+}
+.subscription input{
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    border-bottom: 2px solid white;
+    background-color:  #ffcc00;
+}
+.subscription input::placeholder{
+    opacity: 0.75;
+}
+.subscription button{
+    border: none;
+    outline: none;
+    color:#ffcc00;
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #19283f;
+    border-radius: 20px;
+
+}
+/*------------------------- ||Footer -------------------*/
+footer{
+    width: 100%;
+    background-color: #19283f;
+    text-align: center;
+    padding-top: 10px;
+}
+.footerM{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(max-width: 900px){
+    .footerM div{
+        display: block;
+    }
+}
+
+.FooterContactUs *{
+    padding: 5px;
+}
+.FooterContactUs p:first-child{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.FooterContactUs a{
+    text-decoration: none;
+    background-color: rgb(255, 49, 80);
+    color: rgb(255, 197, 1);
+    padding: 10px 30px;
+    border-radius: 20px ;
+}
+.footerLogo p:nth-child(3) span{
+    color: #009999;
+}
+.footerLogo p:last-child span{
+    color: #ffcc00;
+}
+            
