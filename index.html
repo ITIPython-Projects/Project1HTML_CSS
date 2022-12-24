@@ -13,15 +13,22 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script>
         $(document).on('mousemove', function (e) {
             $('#follwoMe').css({
+                display: "block",
                 left: e.pageX,
                 top: e.pageY
             });
         });
-    </script> -->
+        $(document).on('mouseenter', function (e) {
+            console.log('hi');
+            $('#follwoMe').css({
+                display: "none",
+            });
+        });
+    </script>
 </head>
 <body>
 <!--------------------------- NavBare -------------------------------------------->
@@ -297,10 +304,10 @@
             </div>
         </div>
     </footer>
-  <!-- <div class="follwoMe">
-    <img src="images/snowman.png">
-  </div>  
-    <section id="displayProjects" >
+    <div id="follwoMe">
+        <img src="images/snowman.png" title="its too Cold" alt="Happy new Year">
+    </div>  
+    <!-- <section id="displayProjects" >
         test
     </section> -->
 
