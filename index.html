@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="specializing in software production, visual effects, animation and all online advertising and marketing work with the latest technology and production methods.">
+    <meta name="description"
+        content="specializing in software production, visual effects, animation and all online advertising and marketing work with the latest technology and production methods.">
     <meta name="keywords" content="graphic design, Photoshop , video editing">
     <meta name="author" content="ITI_Python Tarack">
     <title>Bondi Creative</title>
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+        $(document).on('mousemove', function (e) {
+            $('#follwoMe').css({
+                left: e.pageX,
+                top: e.pageY
+            });
+        });
+    </script> -->
 </head>
 <body>
 <!--------------------------- NavBare -------------------------------------------->
@@ -66,7 +76,7 @@
     </header>
 <!--------------------------- Content -------------------------------------------->
     <section class="content">
-        <div class="goodAt">
+        <section class="goodAt">
             <div class="innerContainer">
                 <div class="netWorkImageBox">
                     <div class="netWorkImageBoxImage">
@@ -111,8 +121,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="weMakeThis">
+        </section>
+        <section class="weMakeThis">
             <div class="innerContainer">
                 <div class="netWorkImageBox">
                     <div class="netWorkImageBoxImage">
@@ -144,7 +154,7 @@
                     </div>
                     <div class="projectsImages">
                         <!-- it Will Replace With the Iframe in the  Next Viersion -->
-                        <img id="mainImageCategoty" src="images/mainImageAll.png" alt="Our Project Image" title="Design Project">
+                        <img id="mainImageCategoty" src="images/mainImageAll.png" alt="Our Project Image" title="Design Project" onclick="openPop(event)">
                         <img class="projects" src="images/designProject.png" alt="Our Project Image" title="Design Project">
                         <img class="projects" src="images/designProject.png" alt="Our Project Image" title="Design Project">
                         <img class="projects" src="images/codeProject.png" alt="Our Project Image" title="Design Project">
@@ -158,8 +168,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="stuffAboutUs">
+        </section>
+        <section class="stuffAboutUs">
             <div class="innerContainer">
                 <div class="netWorkImageBox">
                     <div class="netWorkImageBoxImage">
@@ -192,7 +202,7 @@
                 </div>
             </div>
             <div style="clear: both;"></div>
-        </div>
+        </section>
         <section class="meetTheTeam">
             <div class="innerContainer">
                 <div class="netWorkImageBox">
@@ -244,7 +254,7 @@
                 </section>
             </div>
         </section>
-        <div class="sponsores">
+        <section class="sponsores">
             <div class="innerContainer">
                 <div class="icons">
                     <img src="images/spon1.png" title="Sponsores" alte="We are sponsored by spon1">
@@ -255,8 +265,8 @@
                     <img src="images/spon6.png" title="Sponsores" alte="We are sponsored by spon1">
                 </div>
             </div>
-        </div>
-        <div class="subscription">
+        </section>
+        <section class="subscription">
             <div class="innerContainer">
                 <div class="cont">
                     <p>Subscribe to our Newsletter:</p>
@@ -264,7 +274,7 @@
                     <button>Subscribe </button>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     <footer >
         <div class="innerContainer">
@@ -287,6 +297,12 @@
             </div>
         </div>
     </footer>
+  <!-- <div class="follwoMe">
+    <img src="images/snowman.png">
+  </div>  
+    <section id="displayProjects" >
+        test
+    </section> -->
 
     
 </body>

@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
   }
-.body{
-    min-height: 5000px;
+body{
     font-family: "Roboto", sans-serif;
 }
+
 p{                 
     font-size: 15px;
     color: rgb(168, 185, 192);
@@ -157,6 +157,12 @@ h3{
 .content .goodAt .innerContainer .goodAtStyff .staff div{
     display: inline-block;
 }
+@media(max-width: 900px){
+    .content .goodAt .innerContainer .goodAtStyff .staff{
+        display: block;
+        width: 100%;
+    }
+}
 #staffImage1{
     background-image: url('../images/stuffNumber1.png');
     width: 79px;        
@@ -228,6 +234,19 @@ h3{
     padding: 0px 15px 15px;
 
 }
+@media(max-width: 900px){
+    .projectsImages img{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media(max-width: 700px){
+    .projectsImages img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .Mask {
     background-color: #19283f;
     opacity: 0.8;
@@ -380,7 +399,7 @@ h3{
     border-radius: 20px;
 
 }
-/*------------------------- ||Footer -------------------*/
+/*___________________________________________||FOOTER] CSS___________________________________________*/
 footer{
     width: 100%;
     background-color: #19283f;
@@ -397,7 +416,9 @@ footer{
         display: block;
     }
 }
-
+.FooterContactUs{
+    padding-bottom: 20px;
+}
 .FooterContactUs *{
     padding: 5px;
 }
@@ -418,4 +439,23 @@ footer{
 .footerLogo p:last-child span{
     color: #ffcc00;
 }
-            
+
+/*___________________________________________||Follw ME] CSS___________________________________________*/
+/* #follwoMe{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+} */
+/*___________________________________________||POP UP DISPLAY] CSS___________________________________________*/
+/* #displayProjects{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color:rgb(0, 0, 0, 0.5);
+    left: 0;
+    top: 0px;
+    overflow-y: auto;
+    display: none;
+} */

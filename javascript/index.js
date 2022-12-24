@@ -80,3 +80,14 @@ function changeAll(path=''){
     });
 
 }
+//------------------------- CONTENT Section:'We MAke This' Display PopUP Projects Image -------------------------
+// function openPop(e) {
+//     var pop = document.getElementById('displayProjects').style;
+//     pop.top = e.clientX+e.pageX + "px";
+//     pop.display= 'block';
+//     // console.log(e.pageX);
+//     // console.log(e.pageY);
+//     // console.log(e);
+
+
+// }
