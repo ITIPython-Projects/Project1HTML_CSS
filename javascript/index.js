@@ -89,7 +89,8 @@ function openPop() {
     if(!hasAppended){
         console.log(arrImgaes);
         Array.from(arrImgaes).forEach(function(element) {
-            pop.appendChild(element);
+            var clone = element.cloneNode(true);
+            pop.appendChild(clone); 
         });
         hasAppended = 1
     }
