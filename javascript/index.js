@@ -81,29 +81,34 @@ function changeAll(path=''){
 
 }
 //------------------------- CONTENT Section:'We MAke This' Display PopUP Projects Image -------------------------
-var hasAppended = 0
-function openPop() {
-    let pop        = document.getElementById('displayProjects');
-    let arrImgaes  = document.getElementsByClassName('projectsimg')
-    let exitButton = document.querySelector("#displayProjects button")
-    if(!hasAppended){
-        console.log(arrImgaes);
-        Array.from(arrImgaes).forEach(function(element) {
-            var clone = element.cloneNode(true);
-            pop.appendChild(clone); 
-        });
-        hasAppended = 1
+    // ADD EVENT
+    let projectsImages = document.querySelectorAll('.projectsImages img')
+    Array.from(projectsImages).forEach(function(element) {
+        element.addEventListener('click',openPop)
+    });
+    // Pop UP Method
+    var hasAppended = 0
+    function openPop() {
+        let pop        = document.getElementById('displayProjects');
+        let arrImgaes  = document.getElementsByClassName('projectsimg')
+        let exitButton = document.querySelector("#displayProjects button")
+        if(!hasAppended){
+            console.log(arrImgaes);
+            Array.from(arrImgaes).forEach(function(element) {
+                var clone = element.cloneNode(true);
+                pop.appendChild(clone); 
+            });
+            hasAppended = 1
+        }
+        pop.style.display  = 'block';
+        pop.style.position = 'fixed';
+        exitButton.style.position = 'fixed';
+        document.body.style.overflow = "hidden"
     }
-    pop.style.display  = 'block';
-    pop.style.position = 'fixed';
-    exitButton.style.position = 'fixed';
-    document.body.style.overflow = "hidden"
-}
-document.querySelector("#displayProjects button").addEventListener("click",function(){
-    let pop       = document.getElementById('displayProjects');
-    let exitButton = document.querySelector("#displayProjects button")
-    pop.style.display  = 'none';
-    pop.style.position = 'absolute';
-    exitButton.style.position = 'absolute';
-    document.body.style.overflow = "auto"
-})
+    document.querySelector("#displayProjects button").addEventListener("click",function(){
+        let pop       = document.getElementById('displayProjects');
+        pop.style.display  = 'none';
+        pop.style.position = 'absolute';
+        this.style.position = 'absolute';
+        document.body.style.overflow = "auto"
+    })
