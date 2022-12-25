@@ -455,7 +455,7 @@ footer{
     
 }
 /*___________________________________________||POP UP DISPLAY] CSS___________________________________________*/
-/* #displayProjects{
+#displayProjects{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -463,6 +463,33 @@ footer{
     background-color:rgb(0, 0, 0, 0.5);
     left: 0;
     top: 0px;
-    overflow-y: auto;
-    display: none;
-} */
+    overflow: auto;
+    /* display: none; */
+    text-align: center;
+}
+#displayProjects img{
+    margin-top: 40px;
+    width: 90%;
+}
+#displayProjects button{
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    color:rgb(255, 49, 80);
+    font-size: 30px;
+}
+#displayProjects button:hover{
+    background-color: #19283f;
+    padding: 10px 30px;
+    background-color: #19283f;
+    border-radius: 20px;
+    cursor: pointer;
+}
+@media (min-width: 800px){
+    #displayProjects img{
+        width: 60%;
+    }
+}

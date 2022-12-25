@@ -66,7 +66,7 @@ function cheangeCategoryImages(_this){
     }
 }
 function changeAll(path=''){
-    var arrImgaes = document.getElementsByClassName('projects')
+    var arrImgaes = document.getElementsByClassName('projectsimg')
     if(path){
         Array.from(arrImgaes).forEach(function(element) {
             element.src=path
@@ -81,14 +81,28 @@ function changeAll(path=''){
 
 }
 //------------------------- CONTENT Section:'We MAke This' Display PopUP Projects Image -------------------------
-// function openPop(e) {
-//     var pop = document.getElementById('displayProjects').style;
-//     pop.top = e.clientX+e.pageX + "px";
-//     pop.display= 'block';
-//     // console.log(e.pageX);
-//     // console.log(e.pageY);
-//     // console.log(e);
-
-
-// }
-
+var hasAppended = 0
+function openPop() {
+    let pop        = document.getElementById('displayProjects');
+    let arrImgaes  = document.getElementsByClassName('projectsimg')
+    let exitButton = document.querySelector("#displayProjects button")
+    if(!hasAppended){
+        console.log(arrImgaes);
+        Array.from(arrImgaes).forEach(function(element) {
+            pop.appendChild(element);
+        });
+        hasAppended = 1
+    }
+    pop.style.display  = 'block';
+    pop.style.position = 'fixed';
+    exitButton.style.position = 'fixed';
+    document.body.style.overflow = "hidden"
+}
+document.querySelector("#displayProjects button").addEventListener("click",function(){
+    let pop       = document.getElementById('displayProjects');
+    let exitButton = document.querySelector("#displayProjects button")
+    pop.style.display  = 'none';
+    pop.style.position = 'absolute';
+    exitButton.style.position = 'absolute';
+    document.body.style.overflow = "auto"
+})
