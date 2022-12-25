@@ -106,6 +106,12 @@ h3{
     text-align: center;
     height: 300px;
 }
+@media(max-width: 700px){
+    .header{
+        padding-top: 50px;
+    }
+}
+
 .header .innerContainer{
      margin: 7%; 
 }
